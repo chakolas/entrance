@@ -35,17 +35,26 @@ class App extends React.Component {
 				<ThemeProvider theme={theme}>
       <CssBaseline />
       <Typography style={{ marginTop: 50 }}>
-	  <video
+	  
+				
+	<div
+          style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center"
+        }}
+      	><video
 		autoplay="true"
 		muted="true"
 		width='1060'
 		height='600'
 		preload='true'
 		loop='true'
-        controls
-        style={{ backgroundColor: "black" }}
-        controlsList="nodownload"
-      >
+        	controls
+        	style={{ backgroundColor: "black" }}
+        	controlsList="nodownload"
+      	></div>
+
         <source
           src="https://storage.googleapis.com/chakolas/Chakolas%20Pavilion.mp4"
           type="video/mp4"
