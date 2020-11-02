@@ -47,7 +47,7 @@ class App extends React.Component {
 		autoplay="true"
 		muted="true"
 		width='1000'
-		height='500'
+		height='550'
 		preload='true'
 		loop='true'
         	controls
