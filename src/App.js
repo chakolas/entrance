@@ -53,16 +53,13 @@ class App extends React.Component {
         	controls
         	style={{ backgroundColor: "black" }}
         	controlsList="nodownload"
-      	></div>
-
-        <source
+      	><source
           src="https://storage.googleapis.com/chakolas/Chakolas%20Pavilion.mp4"
           type="video/mp4"
-        />
-      </video>
-				<Grid container direction='row'>
-					{booksData.map(book => (
-						<BooksCard {...book.fields} key={book.fields.id} />
+        /></video></div>
+		    	<Grid container direction='row'>
+		     	{booksData.map(book => (
+		      		<BooksCard {...book.fields} key={book.fields.id} />
 					))}
 				</Grid>
 				<div align="center" justify="center" ><h4><footer>&copy; Copyright 2020 <a href="https://aks.one">https://aks.one</a></footer></h4></div>
