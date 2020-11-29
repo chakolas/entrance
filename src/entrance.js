@@ -26,7 +26,7 @@ const useStyles = makeStyles(theme => ({
 	}
 }))
 
-function BooksCard({ title, Type, of, time, Image }) {
+function Event({ title, Type, of, time, Image }) {
 	const classes = useStyles()
 	return (
 		<div className={classes.root}>
@@ -59,4 +59,4 @@ function BooksCard({ title, Type, of, time, Image }) {
 	)
 }
 
-export default BooksCard
+export default Event

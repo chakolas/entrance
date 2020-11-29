@@ -1,5 +1,5 @@
 import React from 'react'
-import BooksCard from './components/BooksCard'
+import Event from './entrance'
 import Grid from '@material-ui/core/Grid'
 import { ThemeProvider } from "@material-ui/styles"
 import {
@@ -16,7 +16,7 @@ const theme = createMuiTheme({
 
 class App extends React.Component {
 	state = {
-		booksData: []
+		data: []
 	}
 
 	componentDidMount() {
@@ -24,13 +24,13 @@ class App extends React.Component {
 			.then(res => res.json())
 			.then(res => {
 				console.log(res.records)
-				this.setState({ booksData: res.records })
+				this.setState({ data: res.records })
 			})
 			.catch(error => console.log(error))
 	}
 
   render(){
-		const {booksData} = this.state
+		const {data} = this.state
 			return (
 				<ThemeProvider theme={theme}>
       <CssBaseline />
@@ -58,8 +58,8 @@ class App extends React.Component {
           type="video/mp4"
         /></video></div>
 		    	<Grid container direction='row'>
-		     	{booksData.map(book => (
-		      		<BooksCard {...book.fields} key={book.fields.id} />
+		     	{data.map(book => (
+		      		<Event {...book.fields} key={book.fields.id} />
 					))}
 				</Grid>
 				<div align="center" justify="center" ><h4><footer>&copy; Copyright 2020 <a href="https://aks.one">https://aks.one</a></footer></h4></div>
