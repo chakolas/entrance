@@ -54,7 +54,7 @@ class App extends React.Component {
         	style={{ backgroundColor: "black" }}
         	controlsList="nodownload"
       	><source
-          src="https://storage.googleapis.com/chakolas/chakolas.mp4"
+          src="https://res.cloudinary.com/chakolas/video/upload/v1606559057/Pavilion_t0e46w.mp4"
           type="video/mp4"
         /></video></div>
 		    	<Grid container direction='row'>
